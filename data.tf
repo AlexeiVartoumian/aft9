@@ -5,7 +5,7 @@ data "aws_vpc" "aft_management_vpc" {
 
 data "aws_subnet" "aft_public_subnet_01" {
   
-  vpc_id   = data.aws_vpc.aft_management_vpc[count.index].id
+  vpc_id   = "vpc-008bccf901727ec9d"
   filter {
     name   = "tag:Name"
     values = ["aft-vpc-public-subnet-01"]
