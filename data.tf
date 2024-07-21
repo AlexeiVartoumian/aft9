@@ -1,9 +1,5 @@
 data "aws_vpc" "aft_management_vpc" {
-  count    = var.use_aft_vpc ? 1 : 0
-  filter {
-    name   = "tag:Name"
-    values = ["aft-management-vpc"]
-  }
+  
   id = "vpc-008bccf901727ec9d"
 }
 
