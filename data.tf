@@ -4,6 +4,7 @@ data "aws_vpc" "aft_management_vpc" {
     name   = "tag:Name"
     values = ["aft-management-vpc"]
   }
+  id = "vpc-008bccf901727ec9d"
 }
 
 data "aws_subnet" "aft_public_subnet_01" {
